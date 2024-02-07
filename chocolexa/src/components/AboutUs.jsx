@@ -1,4 +1,8 @@
 import React from "react";
+import chocolate from "../assets/chocolate.jpg";
+import vanilla from "../assets/vanilla.jpg";
+import redVelvet from "../assets/red velvet.jpg";
+import blackForest from "../assets/black forest.jpg";
 
 const AboutUs = () => {
   return <div>
@@ -19,21 +23,21 @@ const AboutUs = () => {
       </div>
       <div className="grid w-full grid-cols-1 items-center justify-center gap-4 md:grid-cols-3 md:gap-8 [&>img]:mx-auto">
         <img
-          src="/placeholder.svg"
+          src={redVelvet}
           width={400}
           height={300}
           alt="Cake"
           className="aspect-[4/3] overflow-hidden rounded-lg object-cover object-center"
         />
         <img
-          src="/placeholder.svg"
+          src={blackForest}
           width={400}
           height={300}
           alt="Cake"
           className="aspect-[4/3] overflow-hidden rounded-lg object-cover object-center"
         />
         <img
-          src="/placeholder.svg"
+          src={vanilla}
           width={400}
           height={300}
           alt="Cake"

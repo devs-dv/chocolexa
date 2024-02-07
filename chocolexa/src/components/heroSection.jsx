@@ -4,6 +4,7 @@ import CarouselContent from "../assets/bakery.jpg"; // Adjust the path according
 import CarouselPrevious from "../assets/bakery.jpg"; // Adjust the path accordingly
 import CarouselNext from "../assets/bakery.jpg"; // Adjust the path accordingly
 import Carousel from "../assets/bakery.jpg"; // Adjust the path accordingly
+import cake1 from '../assets/cake1.jpg'
 
 
 
@@ -28,7 +29,7 @@ const HeroSection = () => {
               className="min-w-0 shrink-0 grow-0 basis-full pl-4"
             >
               <img
-                src="/placeholder.svg"
+                src={cake1}
                 width={800}
                 height={600}
                 alt="Cake 1"
@@ -82,7 +83,7 @@ const HeroSection = () => {
             <path d="m12 19-7-7 7-7" />
             <path d="M19 12H5" />
           </svg>
-          <span className="sr-only">Previous slide</span>
+          <span className="sr-only bg-slate-500">Previous slide</span>
         </button>
         <button className="inline-flex items-center whitespace-nowrap shrink-0 justify-center text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm font-medium hover:bg-accent hover:text-accent-foreground absolute h-8 w-8 rounded-full -right-12 top-1/2 -translate-y-1/2">
           <svg
@@ -101,6 +102,7 @@ const HeroSection = () => {
             <path d="m12 5 7 7-7 7" />
           </svg>
           <span className="sr-only">Next slide</span>
+          
         </button>
       </div>
       <div className="flex flex-col justify-center space-y-4">
@@ -115,7 +117,7 @@ const HeroSection = () => {
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row">
           <a
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+            className=" inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
             href="#"
           >
             Order Now
