@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <h3 className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
                 Opening hours
               </h3>
@@ -134,7 +134,7 @@ const Footer = () => {
                   <dd className="text-gray-500 dark:text-gray-400">Closed</dd>
                 </div>
               </dl>
-            </div>
+            </div> */}
           </div>
         </footer>
       </>
