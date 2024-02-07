@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import cake1 from "../assets/cake1.jpg";
 import cake2 from "../assets/black forest.jpg";
 import cake3 from "../assets/vanilla.jpg";
-
+import '../App.css'
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -10,16 +10,13 @@ const HeroSection = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === slides.length - 1 ? 0 : prevSlide + 1
     );
-    console.log(currentSlide);
   };
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? slides.length - 1 : prevSlide - 1
     );
-    console.log(currentSlide);
   };
-  console.log(currentSlide);
 
   const slides = [cake1, cake2, cake3];
 
@@ -34,20 +31,26 @@ const HeroSection = () => {
           >
             <div className="overflow-hidden" style={{ position: "relative" }}>
               <div
-                className="flex"
+                className="flex carousel-container"
                 style={{
                   transform: `translateX(-${currentSlide * 100}%)`,
                   transition: "transform 0.5s ease-in-out",
                 }}
               >
                 {slides.map((slide, index) => (
-                  <div key={index} className="w-full" style={{display:'block'}}>
+                  <div
+                    key={index}
+                    className={`w-full carousel-slide ${
+                      index === currentSlide ? "visible" : "hidden"
+                    }`}
+                  >
+                    {console.log(slide)}
                     <img
                       src={slide}
-                      width={100}
+                      width={800}
                       height={600}
                       alt={`Cake ${index + 1}`}
-                      style={{ aspectRatio: "full", objectFit: "cover" }}
+                      style={{ aspectRatio: "16/9", objectFit: "cover" }}
                     />
                   </div>
                 ))}
