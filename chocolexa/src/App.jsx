@@ -1,25 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-
-import Services from "./Components/Services";
-import Footer from "./Components/Footer";
-import Navigation from "./Components/Navigation";
-import Landing from "./Components/Landing";
-import Review from "./Components/Review";
-import ContactUs from "./Components/ContactUs";
 import { BrowserRouter } from "react-router-dom";
-import AboutS from "./Components/AboutS";
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import HeroSection from "./components/HeroSection"; // Capitalized component names are conventionally used for React components
+import Products from "./components/Products"; // Assuming Products is a component in your project
+import ReviewS from "./components/ReviewS"; // Capitalized component names are conventionally used for React components
+import ContactUs from "./components/ContactUs"; // Capitalized component names are conventionally used for React components
+import AboutUs from "./components/AboutUs"; // Capitalized component names are conventionally used for React components
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navigation />
-        <Landing />
-        <Review />
-        <Services />
-        <AboutS />
-        <ContactUs />
+        <HeroSection /> {/* Capitalize component name */}
+        <Products /> {/* Assuming Products is a component */}
+        <ReviewS /> {/* Capitalize component name */}
+        <AboutUs /> {/* Capitalize component name */}
+        <ContactUs /> {/* Capitalize component name */}
         <Footer />
       </BrowserRouter>
     </>
