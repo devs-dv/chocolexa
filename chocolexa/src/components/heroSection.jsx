@@ -1,9 +1,9 @@
 import React from "react";
-import CarouselItem from "../assets/bakery.jpg"; // Adjust the path accordingly
-import CarouselContent from "../assets/bakery.jpg"; // Adjust the path accordingly
-import CarouselPrevious from "../assets/bakery.jpg"; // Adjust the path accordingly
-import CarouselNext from "../assets/bakery.jpg"; // Adjust the path accordingly
-import Carousel from "../assets/bakery.jpg"; // Adjust the path accordingly
+// import CarouselItem from "../assets/bakery.jpg"; // Adjust the path accordingly
+// import CarouselContent from "../assets/bakery.jpg"; // Adjust the path accordingly
+// import CarouselPrevious from "../assets/bakery.jpg"; // Adjust the path accordingly
+// import CarouselNext from "../assets/bakery.jpg"; // Adjust the path accordingly
+// import Carousel from "../assets/bakery.jpg"; // Adjust the path accordingly
 import cake1 from '../assets/cake1.jpg'
 
 
@@ -111,8 +111,8 @@ const HeroSection = () => {
             Delightful Cakes for Every Occasion
           </h1>
           <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-            Experience the joy of our delicious and beautifully crafted cakes.
-            Perfec
+          Experience the joy of our delicious and beautifully crafted cakes. Perfect for birthdays, weddings, and
+                other special events.
           </p>
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row">

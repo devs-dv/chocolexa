@@ -25,7 +25,7 @@ const Navigation = () => {
       <path d="m8 17-1 5-1.37-.68A3 3 0 0 0 4.3 21H3v-1.3a3 3 0 0 0-.32-1.33L2 17l5-1" />
     </svg>
     <span className="ml-2 text-lg font-bold text-[#6D2E1D]">
-      Chocolate Shop
+      Chocolexa 
     </span>
   </a>
   <nav className="hidden md:flex gap-4 sm:gap-6">
@@ -51,7 +51,7 @@ const Navigation = () => {
       className="text-sm font-medium text-[#6D2E1D] hover:underline underline-offset-4"
       href="#"
     >
-      Our Chocolates
+      Our Cakes
     </a>
     <a
       className="text-sm font-medium text-[#6D2E1D] hover:underline underline-offset-4"
