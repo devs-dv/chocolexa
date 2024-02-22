@@ -4,10 +4,7 @@ const ContactUs = () => {
   return <div>
 
 <>
-  {/*
-// v0 by Vercel.
-// https://v0.dev/t/jpitJu69ZJp
-*/}
+
   <div className="grid md:grid-cols-2 lg:grid-cols-3 items-start gap-8 md:gap-12 lg:gap-16">
     <div className="space-y-4">
       <div className="space-y-2">

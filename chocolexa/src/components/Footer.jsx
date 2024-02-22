@@ -4,10 +4,7 @@ const Footer = () => {
   return (
     <div>
       <>
-        {/*
-// v0 by Vercel.
-// https://v0.dev/t/8ppAIUdWA3y
-*/}
+      
         <footer className="bg-gray-50 dark:bg-gray-950">
           <div className="container flex items-center justify-center gap-10 px-4 text-center md:px-6">
             <div className="space-y-2">
