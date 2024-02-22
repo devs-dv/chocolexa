@@ -8,4 +8,4 @@ const SpecProduct = () => {
   )
 }
 
-export default SpecProduct
+export default SpecProduct;
