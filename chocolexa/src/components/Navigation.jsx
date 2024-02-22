@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -47,12 +48,12 @@ const Navigation = () => {
             >
               About Us
             </a>
-            <a
+            <Link
               className="text-sm font-medium text-[#6D2E1D] hover:underline underline-offset-4"
-              href="#"
+              to="/Products"
             >
               Our Cakes
-            </a>
+            </Link>
             <a
               className="text-sm font-medium text-[#6D2E1D] hover:underline underline-offset-4"
               href="#"

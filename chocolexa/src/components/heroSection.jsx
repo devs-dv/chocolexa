@@ -24,9 +24,8 @@ const HeroSection = () => {
   return (
     <section
       className="w-full py-12 md:py-24 lg:py-32"
-      
     >
-      <div className="container px-4 md:px-6">
+      <div className=" px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div
             className="relative w-full aspect-[16/9] overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
@@ -35,7 +34,7 @@ const HeroSection = () => {
           >
             <div className="overflow-hidden" style={{ position: "relative" }}>
               <div
-                className="flex carousel-container"
+                className=""
                 style={{
                   transition: "transform 0.5s ease-in-out",
                 }}
@@ -47,7 +46,7 @@ const HeroSection = () => {
                       index === currentSlide ? "visible" : "hidden"
                     }`}
                   >
-                    {console.log(slide)}
+                    
                     <img
                       src={slide}
                       alt={`Cake ${index + 1}`}

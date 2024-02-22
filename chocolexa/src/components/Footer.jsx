@@ -4,25 +4,21 @@ const Footer = () => {
   return (
     <div>
       <>
-        {/*
-// v0 by Vercel.
-// https://v0.dev/t/8ppAIUdWA3y
-*/}
         <footer className="bg-gray-50 dark:bg-gray-950">
-          <div className="container flex items-center justify-center gap-10 px-4 text-center md:px-6">
+          <div className=" max-lg:grid max-lg:gap-2 flex items-center justify-center gap-10 px-4 text-center md:px-6">
             <div className="space-y-2">
-              <h3 className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
+              <h3 className=" max-lg:text-sm text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
                 Visit us
               </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <p className="max-lg:text-xs text-sm text-gray-500 dark:text-gray-400">
                 123 Sweet Street, Cupcakeville, CA 90210
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
+              <h3 className="max-lg:text-sm text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
                 Contact us
               </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <p className="max-lg:text-xs text-sm text-gray-500 dark:text-gray-400">
                 Call us at 1-234-567-8901 or email
                 <a className="underline underline-offset-2" href="#">
                   info@example.com
@@ -30,10 +26,10 @@ const Footer = () => {
               </p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
+              <h3 className="max-lg:text-sm text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl">
                 Follow us
               </h3>
-              <div className="flex items-center gap-2">
+              <div className="flex justify-center items-center gap-2">
                 <a
                   className="rounded-full border border-gray-200 hover:border-gray-300"
                   href="#"
