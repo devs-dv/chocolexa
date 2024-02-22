@@ -4,13 +4,8 @@ const ContactUs = () => {
   return <div>
 
 <>
-<<<<<<< HEAD
   
   <div className="grid md:grid-cols-2 lg:grid-cols-3 items-start gap-8 md:gap-12 lg:gap-16 p-10">
-=======
-
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 items-start gap-8 md:gap-12 lg:gap-16">
->>>>>>> f813a5798bf1f6377bba035d246bc98586d92d05
     <div className="space-y-4">
       <div className="space-y-2">
         <h2 className="text-3xl font-bold">Contact Us</h2>
