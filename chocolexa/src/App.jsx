@@ -8,6 +8,8 @@ import Products from "./components/Products"; // Assuming Products is a componen
 import ReviewS from "./components/ReviewS"; // Capitalized component names are conventionally used for React components
 import ContactUs from "./components/ContactUs"; // Capitalized component names are conventionally used for React components
 import AboutUs from "./components/AboutUs"; // Capitalized component names are conventionally used for React components
+import MoreProducts from './components/MoreProducts';
+
 import bg from './assets/bg.jpg'
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <HeroSection />
           {/* Capitalize component name */}
           <Products /> {/* Assuming Products is a component */}
+          <MoreProducts /> 
           <ReviewS /> {/* Capitalize component name */}
           <AboutUs /> {/* Capitalize component name */}
           <ContactUs /> {/* Capitalize component name */}

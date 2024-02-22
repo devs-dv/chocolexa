@@ -66,7 +66,7 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="space-y-2">
-        <a className="flex items-center underline underline-offset-2" href="#">
+        <a className="flex items-center underline underline-offset-2" href="https://wa.me/9348042765">
           Start Chat
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="space-y-2">
-        <a className="flex items-center underline underline-offset-2" href="#">
+        <a className="flex items-center underline underline-offset-2" href="tel:${9348042765}">
           Call Now
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="space-y-2">
-        <a className="flex items-center underline underline-offset-2" href="#">
+        <a className="flex items-center underline underline-offset-2" href="https://maps.app.goo.gl/79rE8qmoc6baD4zr5">
           Get Directions
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -156,11 +156,28 @@ const ContactUs = () => {
           Visit our store to taste our delicious cakes.
         </p>
       </div>
-      <div className="h-[300px] rounded-lg overflow-hidden">
+      {/* <div className="h-[300px] rounded-lg overflow-hidden">
         <div className="flex flex-col items-center justify-center border-4 border-red-500 rounded-lg bg-red-200 text-red-500 p-4">
           Something went wrong
         </div>
-      </div>
+      </div> */}
+      <div className="h-[300px] rounded-lg overflow-hidden">
+  <div className="flex flex-col items-center justify-center border-4 border-red-500 rounded-lg bg-red-200 text-red-500 p-4">
+  <iframe
+    width="100%"
+    height="300"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59893.45623370581!2d85.72043461512526!3d20.244687140970413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7c3a518af27%3A0x1a9c4a8d917275d3!2sChocolexa!5e0!3m2!1sen!2sin!4v1708614443136!5m2!1sen!2sin"
+    allowfullscreen=""
+    loading="lazy"
+  ></iframe>
+  </div>
+  
+</div>
+<br></br>
     </div>
   </div>
 </>
