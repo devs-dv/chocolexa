@@ -4,6 +4,10 @@ const Footer = () => {
   return (
     <div>
       <>
+<<<<<<< HEAD
+=======
+      
+>>>>>>> f813a5798bf1f6377bba035d246bc98586d92d05
         <footer className="bg-gray-50 dark:bg-gray-950">
           <div className=" max-lg:grid max-lg:gap-2 flex items-center justify-center gap-10 px-4 text-center md:px-6">
             <div className="space-y-2">

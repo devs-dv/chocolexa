@@ -7,20 +7,40 @@ import Products from "./components/Products"; // Assuming Products is a componen
 import ReviewS from "./components/ReviewS"; // Capitalized component names are conventionally used for React components
 import ContactUs from "./components/ContactUs"; // Capitalized component names are conventionally used for React components
 import AboutUs from "./components/AboutUs"; // Capitalized component names are conventionally used for React components
+<<<<<<< HEAD
 import bg from "./assets/bg.jpg";
 import HeroSection from "./components/heroSection";
 import SpecProduct from "./components/SpecProduct";
 import Home from "./Home";
+=======
+import MoreProducts from './components/MoreProducts';
+
+import bg from './assets/bg.jpg'
+>>>>>>> f813a5798bf1f6377bba035d246bc98586d92d05
 
 function App() {
   return (
     <>
       <BrowserRouter>
+<<<<<<< HEAD
       <Navigation/>
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="/Products" element={<SpecProduct />} />
         </Routes>
+=======
+        
+          <Navigation />
+          <HeroSection />
+          {/* Capitalize component name */}
+          <Products /> {/* Assuming Products is a component */}
+          <MoreProducts /> 
+          <ReviewS /> {/* Capitalize component name */}
+          <AboutUs /> {/* Capitalize component name */}
+          <ContactUs /> {/* Capitalize component name */}
+          <Footer />
+        
+>>>>>>> f813a5798bf1f6377bba035d246bc98586d92d05
       </BrowserRouter>
     </>
   );
