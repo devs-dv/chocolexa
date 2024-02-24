@@ -6,6 +6,7 @@ import ReviewS from "./components/ReviewS"; // Capitalized component names are c
 import ContactUs from "./components/ContactUs"; // Capitalized component names are conventionally used for React components
 import AboutUs from "./components/AboutUs";
 import HeroSection from "./components/heroSection";
+import MoreProducts from './components/MoreProducts';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <HeroSection />
       {/* Capitalize component name */}
       <Products /> {/* Assuming Products is a component */}
+      <MoreProducts />
       <ReviewS /> {/* Capitalize component name */}
       <AboutUs /> {/* Capitalize component name */}
       <ContactUs /> {/* Capitalize component name */}

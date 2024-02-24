@@ -162,7 +162,7 @@ const ContactUs = () => {
         </div>
       </div> */}
       <div className="h-[300px] rounded-lg overflow-hidden">
-  <div className="flex flex-col items-center justify-center border-4 border-red-500 rounded-lg bg-red-200 text-red-500 p-4">
+  <div className="flex flex-col items-center justify-center border-4  w-screen border-red-500 rounded-lg bg-red-200 text-red-500 p-4">
   <iframe
     width="100%"
     height="300"
