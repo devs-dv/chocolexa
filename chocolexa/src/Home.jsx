@@ -16,7 +16,7 @@ const Home = () => {
       <HeroSection />
       {/* Capitalize component name */}
       <Products /> {/* Assuming Products is a component */}
-      <MoreProducts />
+      {/* <MoreProducts /> */}
       <ReviewS /> {/* Capitalize component name */}
       <AboutUs /> {/* Capitalize component name */}
       <ContactUs /> {/* Capitalize component name */}
