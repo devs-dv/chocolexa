@@ -6,13 +6,18 @@ const ReviewS = () => {
   <div className="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
     <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
       <div className="mb-12 space-y-5 md:mb-16 md:text-center">
-        <div className="inline-block px-3 py-1 text-mm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-80 hover:cursor-pointer hover:bg-opacity-20">
-          Words from Others
+        <div className="inline-block px-3 py-1 ">
+        <div className="flex max-w-sm rounded-xl bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
+  <button className="flex-1 font-bold text-xl bg-white px-6 py-3 rounded-xl">
+  Words from Others
+  </button>
+</div>
+
         </div>
-        <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+        <h1 className="mb-5 text-3xl font-semibold text-dark-grey md:text-center md:text-5xl">
           It's not just us.
         </h1>
-        <p className="text-xl text-gray-100 md:text-center md:text-2xl">
+        <p className="text-xl text-dark-gray-100 md:text-center md:text-2xl">
           Here's what others have to say about us.
         </p>
       </div>
