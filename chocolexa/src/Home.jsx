@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Products from "./components/Products"; // Assuming Products is a component in your project
 import ReviewS from "./components/ReviewS"; // Capitalized component names are conventionally used for React components
 import ContactUs from "./components/ContactUs"; // Capitalized component names are conventionally used for React components
+import OurLocation from './components/OurLocation';
 import AboutUs from "./components/AboutUs";
 import HeroSection from "./components/heroSection";
 import MoreProducts from './components/MoreProducts';
@@ -19,6 +20,7 @@ const Home = () => {
       {/* <MoreProducts /> */}
       <ReviewS /> {/* Capitalize component name */}
       <AboutUs /> {/* Capitalize component name */}
+      <OurLocation />
       <ContactUs /> {/* Capitalize component name */}
       <Footer />
     </>
