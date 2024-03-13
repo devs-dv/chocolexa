@@ -1,30 +1,17 @@
 import React, { useState } from "react";
-import cake1 from "../assets/cake1.jpg";
-import cake2 from "../assets/black forest.jpg";
-import cake3 from "../assets/vanilla.jpg";
-import bg from '../assets/bg.jpg'
-import '../App.css'
+import bg from "../assets/bg.jpg";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../App.css";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { car } from "./inedx";
+
+
 const HeroSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === slides.length - 1 ? 0 : prevSlide + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
-    );
-  };
-
-  const slides = [cake1, cake2, cake3];
 
   return (
-    <section
-      className="w-full py-12 md:py-24 lg:py-32"
-    >
+    <section className="w-full py-12 md:py-24 lg:py-32">
       <div className=" px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div
@@ -39,48 +26,45 @@ const HeroSection = () => {
                   transition: "transform 0.5s ease-in-out",
                 }}
               >
-                {slides.map((slide, index) => (
-                  <div
-                    key={index}
-                    className={`w-full carousel-slide ${
-                      index === currentSlide ? "visible" : "hidden"
-                    }`}
-                  >
-                    
-                    <img
-                      src={slide}
-                      alt={`Cake ${index + 1}`}
-                      style={{ aspectRatio: "16/9", objectFit: "cover" }}
-                    />
-                  </div>
-                ))}
+                <Swiper
+                  breakpoints={{
+                    576: {
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                    },
+                    992: {
+                      slidesPerView: 3,
+                      spaceBetween: 10,
+                    },
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  keyboard={{
+                    enabled: true,
+                  }}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  loop={true}
+                  modules={[Pagination]}
+                  className="max-w-[80%] lg:max-w-[90%]"
+                >
+                  {car.map((slide) => (
+                    <SwiperSlide>
+                      <div className={`w-full carousel-slide`}>
+                        <img src={slide.item} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
-              <button
-                onClick={prevSlide}
-                className="previous-btn"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "10%",
-                  zIndex: 1,
-                }}
-              >
-                Previous
-              </button>
-              <button
-                onClick={nextSlide}
-                className="next-btn"
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  right: "10%",
-                  zIndex: 1,
-                }}
-              >
-                Next
-              </button>
             </div>
           </div>
+
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
