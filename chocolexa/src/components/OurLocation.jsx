@@ -7,10 +7,15 @@ const OurLocation = () => {
         {/* This section is for ojur location head */}
         <div className="space-y-4">
           <div className="space-y-2">
-            <h3 className="text-2xl font-bold">Our Location</h3>
+            {/* <h2 className="text-3xl font-bold"> */}
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Our Location & Shops
+            </h2>
+            
             <p className="text-gray-500 dark:text-gray-400">
               Visit our store to taste our delicious cakes.
             </p>
+            <br></br>
           </div>
         </div>
 

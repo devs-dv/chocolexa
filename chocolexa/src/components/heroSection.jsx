@@ -11,6 +11,7 @@ import vanillaImage from "../assets/vanilla.jpg";
 import blackForestImage from "../assets/black forest.jpg";
 import cake1Image from "../assets/cake1.jpg";
 
+
 const HeroSection = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
