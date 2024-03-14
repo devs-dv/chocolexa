@@ -8,6 +8,7 @@ import { car } from "./inedx";
 import c from '../assets/chocolate.jpg'
 
 
+
 const HeroSection = () => {
   console.log(car);
   return (
