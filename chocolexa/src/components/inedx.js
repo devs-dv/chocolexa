@@ -1,15 +1,11 @@
-import vanillaImage from "../assets/vanilla.jpg";
-import blackForestImage from "../assets/black forest.jpg";
-import cake1Image from "../assets/cake1.jpg";
-
 export const car = [
   {
-    item: cake1Image,
+    item: '/image/vanilla.jpg',
   },
   {
-    item: blackForestImage,
+    item: "/image/chocolate.jpg",
   },
   {
-    item: cake1Image,
+    item: "/image/cake1.jpg",
   },
 ];

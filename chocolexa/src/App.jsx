@@ -11,7 +11,6 @@ import HeroSection from "./components/heroSection";
 import SpecProduct from "./components/SpecProduct";
 import Home from "./Home";
 import MoreProducts from './components/MoreProducts';
-import bg from './assets/bg.jpg'
 
 function App() {
   return (

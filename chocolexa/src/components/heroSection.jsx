@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import bg from "../assets/bg.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../App.css";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { car } from "./inedx";
+import c from '../assets/chocolate.jpg'
 
-import vanillaImage from "../assets/vanilla.jpg";
-import blackForestImage from "../assets/black forest.jpg";
-import cake1Image from "../assets/cake1.jpg";
 
 const HeroSection = () => {
+  console.log(car);
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="px-4 md:px-6">
@@ -28,32 +26,19 @@ const HeroSection = () => {
                   transition: "transform 0.5s ease-in-out",
                 }}
               >
-                <Swiper
-                  
-                  pagination={{
-                    clickable: true,
-                  }}
-                  keyboard={{
-                    enabled: true,
-                  }}
-                  autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                  }}
-                  loop={true}
-                  direction={"vertical"}
-                  modules={[Pagination, Autoplay, Navigation]}
-                  
-                  className="max-w-[80%] lg:max-w-[90%] mySwiper"
-                >
-                  {car.map((slide, index) => (
-                    <SwiperSlide key={index}>
-                      <div className={`w-full carousel-slide`}>
-                        <img src={slide.item} alt={`Cake ${index + 1}`} />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                <div className="">
+                  <Swiper>
+                    {car.map((slide, index) => (
+                      <SwiperSlide>
+                        <img
+                          src={slide.item}
+                          alt={slide.alt}
+                          className="w-full h-full object-cover"
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
               </div>
             </div>
           </div>
